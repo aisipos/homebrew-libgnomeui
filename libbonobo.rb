@@ -13,6 +13,7 @@ class Libbonobo < Formula
   depends_on 'd-bus'
   depends_on 'glib'
   depends_on 'orbit'
+  depends_on 'popt'
 
   def patches
     #See http://trac.macports.org/browser/trunk/dports/gnome/libbonobo/Portfile
