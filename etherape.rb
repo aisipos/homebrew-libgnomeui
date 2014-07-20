@@ -24,6 +24,7 @@ class Etherape < Formula
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
+                          "--disable-scrollkeeper",
                           "--prefix=#{prefix}"
     system "make"
     system "make", "doc"
