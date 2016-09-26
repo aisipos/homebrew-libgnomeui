@@ -3,7 +3,7 @@ require 'formula'
 class Etherape < Formula
   homepage 'http://etherape.sourceforge.net/'
   url 'http://downloads.sourceforge.net/project/etherape/etherape/0.9.13/etherape-0.9.13.tar.gz'
-  sha1 '87c387b0929071581bcb6515b15ab849ea8c77fb'
+  sha256 '2a3d2a28b824ce4797529bb90d19a213d80e70f5b3f0cc5f455379aac31c09f7'
 
 
   depends_on 'pkg-config' => :build
