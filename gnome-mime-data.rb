@@ -3,7 +3,7 @@ require 'formula'
 class GnomeMimeData < Formula
   homepage ''
   url 'http://ftp.gnome.org/pub/gnome/sources/gnome-mime-data/2.18/gnome-mime-data-2.18.0.tar.gz'
-  sha1 '84ff364d6cba72d638b0afea600e0151c42c88e8'
+  sha256 '86638a38d5e1d05687ee36ddfecab106dc127b120194a55aca0d3ed289a21037'
 
   depends_on :x11
   depends_on 'pkg-config' => :build

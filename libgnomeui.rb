@@ -3,7 +3,7 @@ require 'formula'
 class Libgnomeui < Formula
   homepage ''
   url 'http://ftp.gnome.org/pub/gnome/sources/libgnomeui/2.24/libgnomeui-2.24.5.tar.gz'
-  sha1 '404bd8b7a252362c322d5bda3d1ffe731b7e4645'
+  sha256 '0a7ae41bf6161eabd52a4a845d1941b29d595a422bd3b7275ab1db0c7a3de9cb'
 
   depends_on 'pkg-config' => :build
   depends_on :x11 # if your formula requires any X11/XQuartz component
