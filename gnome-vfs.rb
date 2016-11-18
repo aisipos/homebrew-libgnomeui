@@ -3,7 +3,7 @@ require 'formula'
 class GnomeVfs < Formula
   homepage ''
   url 'http://ftp.gnome.org/pub/gnome/sources/gnome-vfs/2.24/gnome-vfs-2.24.4.tar.gz'
-  sha1 '3481234bc76b9a5f13b62635499999f1f501e1aa'
+  sha256 '2eb84be8d260e3c4f13b68e820acf4100e97956f6953067a99119fa8d88c5c00'
 
   def patches
     #From https://trac.macports.org/browser/trunk/dports/gnome/gnome-vfs/files/enable-deprecated.diff

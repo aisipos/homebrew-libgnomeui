@@ -3,7 +3,7 @@ require 'formula'
 class Libbonobo < Formula
   homepage ''
   url 'http://ftp.gnome.org/pub/GNOME/sources/libbonobo/2.32/libbonobo-2.32.1.tar.gz'
-  sha1 'adc153233271d355f214846d981f91a923a45c0e'
+  sha256 '59f95f55fdb6bc56f4fcd081ce5c61affbc67cdad6b61e0ca2aaf34d7efe95b9'
 
   depends_on 'pkg-config' => :build
   depends_on 'gettext'

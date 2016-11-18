@@ -3,7 +3,7 @@ require 'formula'
 class Libcanberra < Formula
   homepage ''
   url 'http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz'
-  sha1 'fd4c16e341ffc456d688ed3462930d17ca6f6c20'
+  sha256 'c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72'
 
   def patches
     #
