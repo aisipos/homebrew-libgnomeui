@@ -29,7 +29,7 @@ class Etherape < Formula
     system "make", "install" 
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     The shared libraries are currently not installed in the right directories. To run:
     DYLD_FALLBACK_LIBRARY_PATH=$(brew --prefix)/lib/libglade/2.0/ etherape
     EOS
