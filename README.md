@@ -1,10 +1,9 @@
-homebrew-libgnomeui
-===================
+# Deprecated
+libgnomeui and gnome-vfs are now deprecated libraries. This Homebrew tap is therefore also deprecated.
 
+## Summary
 [Homebrew](http://brew.sh) tap for projects that depend on libgnomeui.
 
-Currently offered:
-* [Etherape](http://etherape.sourceforge.net/) (Graphical network monitor)
 
-Install:
+## Install:
 `brew tap aisipos/libgnomeui`
