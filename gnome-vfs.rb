@@ -10,7 +10,6 @@ class GnomeVfs < Formula
     DATA
   end
 
-  depends_on :x11 
   depends_on 'pkg-config' => :build
   depends_on 'gettext' => :build
   depends_on 'intltool' => :build

@@ -5,7 +5,6 @@ class Libbonoboui < Formula
   url 'http://ftp.gnome.org/pub/GNOME/sources/libbonoboui/2.24/libbonoboui-2.24.5.tar.gz'
   sha256 '2792973184106abe805109ac9b5f750f4015347af077e22cf50001f3f51aa829'
 
-  depends_on :x11
   depends_on 'pkg-config' => :build
   depends_on 'gettext'
   depends_on 'intltool'

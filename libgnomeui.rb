@@ -6,7 +6,6 @@ class Libgnomeui < Formula
   sha256 '0a7ae41bf6161eabd52a4a845d1941b29d595a422bd3b7275ab1db0c7a3de9cb'
 
   depends_on 'pkg-config' => :build
-  depends_on :x11 # if your formula requires any X11/XQuartz component
   depends_on 'intltool' => :build
   depends_on 'glib'
   depends_on 'libxml2'
