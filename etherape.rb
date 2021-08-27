@@ -2,21 +2,20 @@ require 'formula'
 
 class Etherape < Formula
   homepage 'http://etherape.sourceforge.net/'
-  url 'http://downloads.sourceforge.net/project/etherape/etherape/0.9.13/etherape-0.9.13.tar.gz'
-  sha256 '2a3d2a28b824ce4797529bb90d19a213d80e70f5b3f0cc5f455379aac31c09f7'
+  url 'https://newcontinuum.dl.sourceforge.net/project/etherape/etherape/0.9.20/etherape-0.9.20.tar.gz'
+  sha256 'f54b10b56397075c98a1f192e2b30817e212581b0929dd0304e15fa8eaf59f96'
 
+
+  patch :DATA
 
   depends_on 'pkg-config' => :build
+  depends_on 'itstool' => :build
   depends_on 'glib'
   depends_on 'libglade'
   depends_on 'gettext'
-  depends_on 'libgnomeui'
   depends_on 'libpcap'
-  depends_on 'libgnomecanvas'
-  #Because of missing libs at runtime
-  depends_on 'libgnome'
-  depends_on 'libgnomecanvas'
-
+  depends_on 'goocanvas'
+  depends_on 'popt'
 
   def install
     system "./configure", "--disable-debug",
@@ -36,3 +35,19 @@ class Etherape < Formula
   end
 
 end
+__END__
+diff --git a/src/names/eth_resolv.c b/src/names/eth_resolv.c
+index 137985b..194bc5d 100644
+--- a/src/names/eth_resolv.c
++++ b/src/names/eth_resolv.c
+@@ -27,7 +27,9 @@
+ #include <string.h>
+ 
+ #include <net/ethernet.h>
+-#include <netinet/ether.h>
++#include <sys/types.h>
++#include <netinet/in_systm.h>
++#include <netinet/in.h>
+ 
+ #include <glib.h>
+ 
