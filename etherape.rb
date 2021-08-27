@@ -26,7 +26,7 @@ class Etherape < Formula
                           "--prefix=#{prefix}"
     system "make"
     system "make", "doc"
-    system "make", "install" 
+    system "make", "install"
   end
 
   def caveats; <<~EOS

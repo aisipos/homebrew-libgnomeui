@@ -22,17 +22,17 @@ class GnomeVfs < Formula
 
     ENV.append 'LDFLAGS', '-lresolv'
     system "./configure", "--enable-ipv6",
-	                "--disable-howl",
-	                "--disable-avahi",
-	                "--with-openssl-libs=#{Formula.factory('openssl').opt_prefix}/lib",
-	                "--with-openssl-includes=#{Formula.factory('openssl').opt_prefix}/include",
-	                "--disable-gnutls",
-	                "--disable-fam",
-	                "ac_cv_func_open64=no",
-	                "ac_cv_func_posix_fadvise=no",
-	                "ac_cv_path_KRB5_CONFIG=none",
-                     "--prefix=#{prefix}"
-    system "make", "install" 
+                  "--disable-howl",
+                  "--disable-avahi",
+                  "--with-openssl-libs=#{Formulary.factory('openssl').opt_prefix}/lib",
+                  "--with-openssl-includes=#{Formulary.factory('openssl').opt_prefix}/include",
+                  "--disable-gnutls",
+                  "--disable-fam",
+                  "ac_cv_func_open64=no",
+                  "ac_cv_func_posix_fadvise=no",
+                  "ac_cv_path_KRB5_CONFIG=none",
+                  "--prefix=#{prefix}"
+    system "make", "install"
   end
 
   def post_install
